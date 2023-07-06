@@ -4,27 +4,33 @@ A solution that solves a problem of finding path on a grid representing any kind
 
 # The story behind
 
-Back in 2021 I was trying to participate Yandex Contest ![Robots couriers](https://contest.yandex.ru/contest/28643/problems).
+Back in 2021 I was trying to participate Yandex Contest [Robots couriers](https://contest.yandex.ru/contest/28643/problems).
 
-First N number of winners were granted with prize: a ticket to a closed self-driving conference for professionals. Certainly, I'm not a professional in this area and didn't have necessary skills (still not), but I wanted to try.
+First N number of winners were granted with prize: a ticket to a [closed self-driving conference for professionals](https://taxi.yandex.ru/action/ysdm). Certainly, I'm not a professional in this area and didn't have necessary skills (still not), but I wanted to try.
 
 Of course, I have failed. But I also learned a lot. After this event I had to forget about all of this for quite a while due to many reasons. But still wanted to solve it.
 
 Since now I'm not limited in time (no deadline) and I could apply some graphics as well (not only console for Yandex Context system) I decided to play with this task, learn some Graph algorithms and SFML graphics. So I built this little app. Have fun!
 
-![1](https://github.com/optiklab/path-algorithms-on-a-grid-map-for-yandex-rover/blob/data/screenshots/screenshot1.jpg)
-![2](https://github.com/optiklab/path-algorithms-on-a-grid-map-for-yandex-rover/blob/data/screenshots/screenshot2.jpg)
-![3](https://github.com/optiklab/path-algorithms-on-a-grid-map-for-yandex-rover/blob/data/screenshots/screenshot3.jpg)
+# Dependencies
+
+The project is written in C++ with use of STL, SFML for graphics. All dependencies already located in the '/dependencies' folder.
+Project file is built using Visual Studio 2022 and Microsoft Windows.
+I didn't check the project on any other platforms except Windows (sorry).
 
 # How to run
 
-The project is written in C++ with use of STL, SFML for graphics.
-Project file is built using Visual Studio 2022 and Microsoft Windows.
-So, you basically need to open the project using VS and press F5.
+By default, config file located at '/data/appConfig.json' selects proper test case with some map. So, you basically need to open the project using VS and press F5. Then just press SPACE multiple times. As a result you should get something like this:
 
-I didn't check the project on any other platforms except Windows (sorry).
+![1](https://github.com/optiklab/optiklab.github.io/blob/master/img/yandex-rover/picture_0.jpg)
 
-# Dependencies
+While it might be hard to see on picture due to large scale, but there is shortest path between two points on the map. You can play with configuration and tests cases (described below), so you will get other results:
+
+![2](https://github.com/optiklab/optiklab.github.io/blob/master/img/yandex-rover/picture_1.jpg)
+
+![3](https://github.com/optiklab/optiklab.github.io/blob/master/img/yandex-rover/picture_2.jpg)
+
+![4](https://github.com/optiklab/optiklab.github.io/blob/master/img/yandex-rover/picture_3.jpg)
 
 # Original task description
 
