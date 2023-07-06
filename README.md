@@ -33,7 +33,7 @@ While it might be hard to see on picture due to large scale, but there is shorte
 ![4](https://github.com/optiklab/optiklab.github.io/blob/master/img/yandex-rover/picture_3.jpg)
 
 # Original task description
-
+```bash
 N - town size NxN (N <= 2000).
 MaxTips - max possible revenue for 1 order (MaxTips <= 50 000).
 CostC - cost of building robot i.e. robot price (CostC <= 1 000 000 000).
@@ -42,11 +42,12 @@ D - Total number of expected orders (D <= 10 000 000).
 k - Number of new orders for iteration
 Srow, Scol - coordinates of location to take the order
 Frow, Fcol - coordinates of location to drop the order
+```
 
 Input example:
 -----
-N MaxTips CostC
 ```bash
+N MaxTips CostC
 ###
 ..#
 ..#
