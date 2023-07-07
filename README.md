@@ -142,6 +142,6 @@ So, what we do here, is making specifically negative cells Single-Directed by re
 
 Copyright (C) 2023 Anton "optiklab" Yarkov
 
-https://github.com/optiklab/pacman
+https://github.com/optiklab/path-algorithms-on-a-grid-map-for-yandex-rover
 
 See LICENSE file in the repo.
