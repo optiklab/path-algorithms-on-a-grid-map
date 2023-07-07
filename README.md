@@ -44,8 +44,7 @@ Srow, Scol - coordinates of location to take the order
 Frow, Fcol - coordinates of location to drop the order
 ```
 
-Input example:
------
+## Input example:
 ```bash
 N MaxTips CostC
 ###
@@ -61,12 +60,12 @@ Srow, Scol, Frow, Fcol
 ...
 ```
 
-Output example:
-------
+## Output example:
+
 R - number of robots I put in town (1 <= R <= 100).
 
-Success:
--------
+## Success:
+
 Tips you get on each iteration = max(0, MaxTips - DeliveryTime)
 Total score = TotalTips - R*CostC
 
