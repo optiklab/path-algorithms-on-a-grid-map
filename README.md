@@ -32,6 +32,10 @@ While it might be hard to see on picture due to large scale, but there is shorte
 
 ![4](https://github.com/optiklab/optiklab.github.io/blob/master/img/yandex-rover/picture_3.jpg)
 
+To play with different test maps you need to point "map" configuration parameter to the right test data file located at '/data/maps'. Format of files described below and it does contain everything it needs to run the application.
+
+It's hard to put comments in to JSON configuration file, so you can find some details about test cases right in the main.cpp comments or here in the readme.
+
 # Original task description
 ```bash
 N - town size NxN (N <= 2000).
@@ -68,6 +72,10 @@ R - number of robots I put in town (1 <= R <= 100).
 
 Tips you get on each iteration = max(0, MaxTips - DeliveryTime)
 Total score = TotalTips - R*CostC
+
+# Current task description
+
+I decided to keep the original format of test files located in 'data/maps' that actually contain the description of a map itself and coordinates of orders to pickup and dropoff. I decided NOT to deal with Cost Efficiency analysis and NOT to calculate the amount of rovers needed. Instead, this little application focuses on map renderring and quick find of the path between two coordinates. There are plenty of space for improvements, so potentially I may end up adding some features as ideas come to my mind.
 
 # What this code base does
 
