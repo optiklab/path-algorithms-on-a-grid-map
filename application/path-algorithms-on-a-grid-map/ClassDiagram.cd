@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RectangularMap" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="MapBase" ManuallyRouted="true">
+      <Path>
+        <Point X="5" Y="6" />
+        <Point X="5" Y="5.514" />
+        <Point X="6.5" Y="5.514" />
+        <Point X="6.5" Y="5.191" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AoAgBBBAABEAAgAgAAIAgAEIAACCCAASCQAIAAAQAAA=</HashCode>
+      <FileName>src\map\rectangularmap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Order" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAJAAQIggAAAAAAAAAAAAAAAAAAAAggAAAAAAA=</HashCode>
+      <FileName>src\map\order.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Navigator" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAEAAAAAAJAAAAEAAAiAAAAACEAQjAAAAAA=</HashCode>
+      <FileName>src\map\navigator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MapBase" Collapsed="true">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <InheritanceLine Type="VisiblePartObserver" ManuallyRouted="true">
+      <Path>
+        <Point X="3.625" Y="5.062" />
+        <Point X="3.625" Y="5.51" />
+        <Point X="5" Y="5.51" />
+        <Point X="5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>GgAAAAABBhKCAgAAAoAAAAEwARBCAAEwCCAAAAQIAAA=</HashCode>
+      <FileName>src\map\mapbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Focus" Collapsed="true">
+    <Position X="0.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AiEAAAAAgAAAAmIgAAAAAAAAABAAAABIQAAAgAAAABA=</HashCode>
+      <FileName>src\map\focus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edge" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAIAACAAAAAMwEAAAAAAAAAAABAAAAAAAAgAAAAA=</HashCode>
+      <FileName>src\map\edge.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CellBase" Collapsed="true">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>src\map\cellbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cell" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABgIAICIQIogAAAABAAAAAAIAAAACAYAgAAAIAAAA=</HashCode>
+      <FileName>src\map\cell.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisiblePartObserver" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>src\utils\VisiblePartObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotifyVisiblePartChanged" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAEIAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\NotifyVisiblePartChanged.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="AppConfig" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Graph" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\map\graph.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="GraphEdgesList" Collapsed="true">
+    <Position X="5" Y="3.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\map\graph.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
