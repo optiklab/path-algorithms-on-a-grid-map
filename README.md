@@ -1,24 +1,26 @@
 # Path algorithms on a grid map
 
-A solution that solves a problem of finding path on a grid representing any kind of maps from small and virtual maps to more like real maps (see screenshots for examples).
+## Disclarimer
 
-# The story behind
+The project is a bit dirty and unfinished, since it was created for learning and testing some ideas.
 
-Back in 2021 I was trying to participate Yandex Contest [Robots couriers](https://contest.yandex.ru/contest/28643/problems).
+The project is supported by the article [Exploring path finding algorithms](https://github.com/optiklab/path-algorithms-on-a-grid-map/wiki/Exploring-path-finding-algorithms).
 
-First N number of winners were granted with prize: a ticket to a [closed self-driving conference for professionals](https://taxi.yandex.ru/action/ysdm). Certainly, I'm not a professional in this area and didn't have necessary skills (still not), but I wanted to try.
+An implementation of a classic approach to a problem of finding path on a grid that represents maps. Using algorithms like BFS, Dijkstra's and A-Star I'm finding paths on imaginary maps of various scale: from a squared map 5 x 5 to maps that represente more realistic data on a square of 1000 x 1000 (see screenshots for examples).
 
-Of course, I have failed. But I also learned a lot. After this event I had to forget about all of this for quite a while due to many reasons. But still wanted to solve it.
+## The story behind
 
-Since now I'm not limited in time (no deadline) and I could apply some graphics as well (not only console for Yandex Context system) I decided to play with this task, learn some Graph algorithms and SFML graphics. So I built this little app. Have fun!
+After reading a while on the topic, I have found that the problem of finding routes in a grid were in focus for quite a while between 2010 and 2020. Many pro-game developers have found nice optimizations and created new algorithms in this area.
 
-# Dependencies
+I have found it interesting to play with it and build a little application that finds routes on a grid map using well-known Graph algorithms and SFML graphics library to visualize my findings. Have fun!
+
+## Dependencies
 
 The project is written in C++ with use of STL, SFML for graphics. All dependencies already located in the '/dependencies' folder.
 Project file is built using Visual Studio 2022 and Microsoft Windows.
 I didn't check the project on any other platforms except Windows (sorry).
 
-# How to run
+## How to run
 
 By default, config file located at '/data/appConfig.json' selects proper test case with some map. So, you basically need to open the project using VS and press F5. Then just press SPACE multiple times. As a result you should get something like this:
 
@@ -36,7 +38,7 @@ To play with different test maps you need to point "map" configuration parameter
 
 It's hard to put comments in to JSON configuration file, so you can find some details about test cases right in the main.cpp comments or here in the readme.
 
-# Original task description
+## Original task description
 ```bash
 N - town size NxN (N <= 2000).
 MaxTips - max possible revenue for 1 order (MaxTips <= 50 000).
@@ -48,7 +50,7 @@ Srow, Scol - coordinates of location to take the order
 Frow, Fcol - coordinates of location to drop the order
 ```
 
-## Input example:
+### Input example:
 ```bash
 N MaxTips CostC
 ###
@@ -64,7 +66,7 @@ Srow, Scol, Frow, Fcol
 ...
 ```
 
-## Output example:
+### Output example:
 
 R - number of robots I put in town (1 <= R <= 100).
 
@@ -73,11 +75,11 @@ R - number of robots I put in town (1 <= R <= 100).
 Tips you get on each iteration = max(0, MaxTips - DeliveryTime)
 Total score = TotalTips - R*CostC
 
-# Current task description
+## Current task description
 
 I decided to keep the original format of test files located in 'data/maps' that actually contain the description of a map itself and coordinates of orders to pickup and dropoff. I decided NOT to deal with Cost Efficiency analysis and NOT to calculate the amount of rovers needed. Instead, this little application focuses on map renderring and quick find of the path between two coordinates. There are plenty of space for improvements, so potentially I may end up adding some features as ideas come to my mind.
 
-# What this code base does
+## What this code base does
 
 Well, I'm not interested in playing with orders or total costs, especially because I don't have a Test System with examples of good answers for all provided test cases.
 
@@ -87,7 +89,7 @@ So, I have collected all the tests cases available, added some more information 
 
 I used SFML for graphics.
 
-#Test cases:
+## Test cases:
 
 Simple test cases to start from:
 ```bash
@@ -146,7 +148,7 @@ So, what we do here, is making specifically negative cells Single-Directed by re
 "../../data/maps/test_31_multi_weight_graph_map";
 ```
 
-# Author
+## Author
 
 Copyright (C) 2023 Anton "optiklab" Yarkov
 
