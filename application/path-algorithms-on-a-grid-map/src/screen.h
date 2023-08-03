@@ -102,6 +102,7 @@ void drawHelpText(RenderWindow& renderWindow, std::shared_ptr<MapBase> map, sf::
 		sf::Sprite robotS;
 		robotS.setTexture(robotT);
 		robotS.setPosition(xpos, ypos + 7 * DEFAULT_SQUARE_TILE_SIZE);
+		robotS.setScale(sf::Vector2f(0.5f, 0.5f));
 		renderWindow.draw(robotS);
 	}
 }
