@@ -95,6 +95,15 @@ void drawHelpText(RenderWindow& renderWindow, std::shared_ptr<MapBase> map, sf::
 	text6.setFillColor(sf::Color::White);
 	text6.setPosition(xpos, ypos + 5 * DEFAULT_SQUARE_TILE_SIZE);
 	renderWindow.draw(text6);
+
+	sf::Texture robotT;
+	if (robotT.loadFromFile("../../data/walle.png"))
+	{
+		sf::Sprite robotS;
+		robotS.setTexture(robotT);
+		robotS.setPosition(xpos, ypos + 7 * DEFAULT_SQUARE_TILE_SIZE);
+		renderWindow.draw(robotS);
+	}
 }
 
 void draw(RenderWindow& renderWindow, std::shared_ptr<MapBase> map, sf::Font font)
