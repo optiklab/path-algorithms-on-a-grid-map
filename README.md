@@ -4,7 +4,7 @@
 
 The project is a bit dirty and unfinished, since it was created for learning and testing some ideas.
 
-The project is supported by the article [Exploring path finding algorithms](https://github.com/optiklab/path-algorithms-on-a-grid-map/wiki/Exploring-path-finding-algorithms).
+The project is supported by the article [Exploring path finding algorithms](https://github.com/optiklab/path-algorithms-on-a-grid-map/wiki).
 
 An implementation of a classic approach to a problem of finding path on a grid that represents maps. Using algorithms like BFS, Dijkstra's and A-Star I'm finding paths on imaginary maps of various scale: from a squared map 5 x 5 to maps that represente more realistic data on a square of 1000 x 1000 (see screenshots for examples).
 
